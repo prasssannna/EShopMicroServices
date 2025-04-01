@@ -1,0 +1,56 @@
+
+CATALOG API
+	1. Use minimal APIs to build REST components
+	2. Implement Vertical slice arch
+	3. CQRS implementation - MediatR library
+	4. Merten library for Transactional doc DB on POSTGRESQL
+	5. Cater for endpoint definition
+	6. Fluent validation for validating inputs
+	7. Docker compose
+	
+	To develop this, we need analysis on
+	1. Domain models
+		Create a model
+	2. Application use cases
+		Identify use cases
+		1. List Product Catalogs and Categories
+		2. Get products for a category
+		3. Get product for an id
+		4. Create a new product
+		5. Update
+		6. Delete
+	3. Rest API end points
+		GET /products
+		GET products/{id}
+		GET /products/category/{category}
+		POST /products
+		PUT /products/{id}
+		DELETE /products/{id}
+	4. Underlying data structures
+		Document db with Store Catalgs as JSON data
+
+	Technical Analysis
+	1. CQRS pattern: divides read write operations (Command Query Responsibility Segregation)
+	2. Mediator pattern: Reduces direct dependencies and simplifies communication
+	3. Dependency Injection
+	4. Minimal APIs - Using ASP .NET feature APIs simplify endpoint defenetiions
+	5. ORM Pattern: Abstracts db interactions with database objects
+
+	Libraries to be used
+	1. MediatR for CQRS. 
+	2. Carter for endpoints
+	3. Marten for Postgre SQL
+	4. Mapster for object mapping
+	5. Fluent Validations for input validation
+
+	Vertical Slice Architecture
+	Each change/feature is categorised
+		UI
+		Application
+		Domain
+		Infrastructure
+	Each and every feature can be delivered in an incremental fashion
+
+	Main drawback is duplication of code might happen.
+	Design of each slice requires careful consideration.
+	Learning curve involved

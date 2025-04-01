@@ -1,0 +1,17 @@
+1. They are small, independent and loosely coupled services that can work together
+2. Each service can be managed separately.
+3. They can have its own code base
+4. Services communicate eas other with well defined APIs and protocols
+5. They can be deployed independently.
+6.
+
+
+6. Each layer can have its own database.
+
+In order to develop a single application,  we can develop a small 
+	suite of independent services each running in its own process and communicating eac other by HTTP or GRPC
+
+They decompose an appl into smaller independent services and communicate thro well defined apis
+
+
+1. Understand Catalog API

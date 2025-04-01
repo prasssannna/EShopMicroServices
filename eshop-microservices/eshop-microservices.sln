@@ -1,13 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{53BDD4E3-8E11-44AC-810B-E6A219898E27}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{0B4DFD7C-4740-48B1-B46E-163BB1E6B8F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "src\Services\Catalog\Catalog.API\Catalog.API.csproj", "{AA3F737C-79DC-4312-8FD6-7A2DF8E75080}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BF3DEA39-ADD6-4805-A1FA-EF38097109C5}"
+	ProjectSection(SolutionItems) = preProject
+		CatalogAPI.txt = CatalogAPI.txt
+		Microservices_Doc.txt = Microservices_Doc.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{7A5B13D4-038D-4873-A30B-D3E155D243FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "src\BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{94EBB380-9F15-4D94-AC98-6134305D7201}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +29,10 @@ Global
 		{AA3F737C-79DC-4312-8FD6-7A2DF8E75080}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA3F737C-79DC-4312-8FD6-7A2DF8E75080}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA3F737C-79DC-4312-8FD6-7A2DF8E75080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94EBB380-9F15-4D94-AC98-6134305D7201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94EBB380-9F15-4D94-AC98-6134305D7201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94EBB380-9F15-4D94-AC98-6134305D7201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94EBB380-9F15-4D94-AC98-6134305D7201}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,5 +40,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0B4DFD7C-4740-48B1-B46E-163BB1E6B8F3} = {53BDD4E3-8E11-44AC-810B-E6A219898E27}
 		{AA3F737C-79DC-4312-8FD6-7A2DF8E75080} = {0B4DFD7C-4740-48B1-B46E-163BB1E6B8F3}
+		{94EBB380-9F15-4D94-AC98-6134305D7201} = {7A5B13D4-038D-4873-A30B-D3E155D243FE}
 	EndGlobalSection
 EndGlobal
